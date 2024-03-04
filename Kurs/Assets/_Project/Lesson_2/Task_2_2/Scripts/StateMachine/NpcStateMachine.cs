@@ -26,7 +26,7 @@ namespace Assets._Project.Lesson_2.Task_2_2.Scripts.StateMachine
 			_currentState.Enter();
 		}
 
-		public void SwitchState<TState>() where TState : States.IState
+		void IStateSwitcher.SwitchState<TState>()
 		{
 			var state = _states.FirstOrDefault(state => state is TState);
 

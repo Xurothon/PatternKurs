@@ -1,3 +1,4 @@
+using Assets._Project.Lesson_2.Task_2_3.CharacterExample.Scripts.Character.StateMachine.States;
 using UnityEngine;
 
 public abstract class MovementState : IState
@@ -69,4 +70,5 @@ public abstract class MovementState : IState
     private Vector3 GetConvertedVelocity() => new Vector3(Data.XVelocity, Data.YVelocity, 0);
 
     private float ReadHorizontalInput() => Input.Movement.Move.ReadValue<float>();
+
 }
